@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* header section */
+.header{
+    position: relative;
+}
+
+.bg-blue{
+    background-color: rgb(29, 80, 96);
+}
+
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+    align-self: center;
+}
+
+.company-logo{
+    width: 100px;
+}
+
+.navbar{
+    align-self: center;
+}
+
+.navbar ul li{
+    display: inline-block;
+}
+
+.navbar ul li:nth-child(1){
+    margin-right: 40px;
+    background-color: white;
+    padding: 8px 30px;
+    border-radius: 40px;
+}
+
+.navbar ul li:nth-child(1) a{
+    color: rgb(105, 74, 80);
+}
+
+.navbar ul li:nth-child(2){
+    margin-right: 40px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.6px;
+    font-weight: 600;
+}
+
+.header .header-2{
+    background:var(--green);
+}
+
+.header .header-2 .navbar{
+    text-align: center;
+}
+
+.header .header-2 .navbar a{
+    color:rgb(105, 74, 80);
+    display: inline-block;
+    padding:1.2rem;
+    font-size: 1.7rem;
+}
+
+.header .header-2 .navbar a:hover{
+    background:var(--dark-color);
+}
+
+.header .header-2.active{
+    position:fixed;
+    top:0; left:0; right:0;
+    z-index: 1000;
+
+}
+
+/* header section */
+
+/* main section */
+.main-section{
+    position: relative;
+}
+
+.research-container{
+    padding: 20px;
+    background-color: rgba(224, 189, 143, 0.3);
+}
+
+.research-textholder{
+    margin: 10px 0;
+}
+
+.research-title h1{
+    text-align: center;
+    padding: 10px;
+}
+
+/* main section */
+
+/* footer section */
+footer{
+    position: relative;
+    background-color:rgb(29, 80, 96);
+    padding: 16px 0;
+    text-align: center;
+}
+
+footer p{
+    color: white;
+    font-size: 14px;
+}
+/* footer section */

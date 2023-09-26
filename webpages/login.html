@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(234,237,237);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px rgb(190,160,121);
+}
+
+.login-form{
+    text-align: center;
+    padding: 20px;
+    align-self: center;
+}
+
+.login-form h1{
+    font-size: 32px;
+    color: black;
+}
+
+.txt_field {
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+.txt_field input[type=text],
+.txt_field input[type=password]{
+    width: 100%;
+    height: 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    margin: 10px 0;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: -10px;
+}
+
+.login-form p{
+    text-align: right;
+}
+
+.login-form p a{
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+}
+
+.login-btn{
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    text-decoration: none;
+    background-color: green;
+    color: white;
+    margin: 20px 0 0 0;
+    font-size: 20px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+}
+
+    </style>
+    
+</head>
+
+<body>
+    <!-- main container for login page -->
+    <div class="login-container">
+        <div class="container">
+            <div class="main-box">
+                <!-- Image on login box -->
+                <div class="picture">
+                    <img src="../picture/X8ajP3firD9QzBCipfEtPk.jpg" alt="Photo">
+                </div>
+                <!-- Image on login box -->
+                <!-- form  -->
+                <form class="login-form" name="loginform" onsubmit=validateForm()>
+                    <h1>Sign In</h1>
+                    <div class="txt_field">
+                        <input type="text" name="username" placeholder="Phone or e-mail">
+                        <input type="password" name="password" placeholder="Password">
+                    </div>
+                    <p><a href="">Forgot password?</a></p>
+                    <!-- Using inline css to style the button background -->
+                    <button class="login-btn" style="background-color: rgb(5, 97, 5); "> Login</button>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> I am not a Robot</label><br>
+                </form>
+                <!-- form ends -->
+            </div>
+        </div>
+    </div>
+    <!-- main container for login page -->
+    <!-- Form validation using javascript -->
+    <script type="text/javascript">
+		function validateForm(){
+			var email=document.forms["loginform"]["username"].value;
+			var password=document.forms["loginform"]["password"].value;
+			if(email==""||password==""){
+				alert("Enter your Email and Password");
+			}
+			else{
+				alert("You have successfully logged in");
+			}
+		}
+	</script>
+    <!-- Form validation using javascript ends -->
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* main section */
+.main-section{
+    position: relative;
+}
+
+.main-textholder{
+    padding: 20px;
+    background-color: rgba(224, 189, 143, 0.3);
+}
+
+.content-heading h1{
+    text-align: center;
+    font-size: 32px;
+}
+
+.content-text p{
+    font-size: 18px;
+    padding-top: 20px;
+    line-height: 32px;
+}
+
+/* main section */
+
+/* footer section */
+footer{
+    position: relative;
+    background-color:rgb(29, 80, 96);
+    padding: 16px 0;
+    text-align: center;
+}
+
+footer p{
+    color: white;
+    font-size: 14px;
+}
+/* footer section */
